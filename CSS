@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b001f;
+  color: #e6f0ff;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+}
+
+.intro-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-box h1 {
+  font-size: 4.2rem;
+  color: #7dd3fc;
+  text-shadow: 0 0 40px #38bdf8;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  color: #a5d8ff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.pulse-button {
+  display: inline-block;
+  padding: 20px 80px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #7dd3fc;
+  border: 2px solid #38bdf8;
+  border-radius: 999px;
+  text-decoration: none;
+  background: rgba(56, 189, 248, 0.07);
+  box-shadow: 0 0 45px rgba(56, 189, 248, 0.55);
+  transition: all 0.4s ease;
+}
+
+.pulse-button:hover {
+  background: rgba(56, 189, 248, 0.18);
+  box-shadow: 0 0 80px rgba(56, 189, 248, 0.9);
+  transform: scale(1.06);
+}
+
+.test-container {
+  max-width: 980px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+.test-container h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #7dd3fc;
+  margin-bottom: 40px;
+}
+
+.question-row {
+  background: rgba(20, 15, 60, 0.35);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+}
+
+.q-text {
+  font-size: 1.32rem;
+  margin-bottom: 18px;
+  color: #e6f0ff;
+}
+
+.scale-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.scale-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: #c3d6ff;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.scale-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7dd3fc;
+  margin-bottom: 4px;
+}
+
+.scale-desc {
+  font-size: 0.92rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.submit-pulse {
+  padding: 18px 90px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #0ea5e9, #60a5fa);
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 0 40px rgba(14, 165, 233, 0.6);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.submit-pulse:hover {
+  box-shadow: 0 0 80px rgba(14, 165, 233, 0.9);
+  transform: translateY(-2px);
+}
+
+.cancel-link {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.cancel-link:hover {
+  color: #e6f0ff;
+}
+
+.score-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.result-card {
+  background: rgba(15, 10, 50, 0.5);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 16px;
+  padding: 60px 40px;
+  max-width: 780px;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.3);
+}
+
+.result-card h1 {
+  font-size: 3rem;
+  color: #7dd3fc;
+  margin-bottom: 40px;
+}
+
+.pulse-score {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  text-shadow: 0 0 50px #38bdf8;
+  margin-bottom: 10px;
+}
+
+.pulse-title {
+  font-size: 2.8rem;
+  color: #93c5fd;
+  margin: 20px 0 30px;
+}
+
+.pulse-text {
+  font-size: 1.38rem;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 50px;
+  color: #c3d6ff;
+}
+
+.score-details {
+  font-size: 1.45rem;
+  color: #93c5fd;
+  margin-bottom: 50px;
+}
+
+.action-row a {
+  margin: 0 20px;
+  padding: 14px 50px;
+  font-size: 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.35s;
+}
+
+.retry-btn {
+  background: rgba(56, 189, 248, 0.15);
+  border: 2px solid #38bdf8;
+  color: #7dd3fc;
+}
+
+.retry-btn:hover {
+  background: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.7);
+}
+
+.home-btn {
+  background: rgba(147, 197, 253, 0.12);
+  border: 2px solid #93c5fd;
+  color: #93c5fd;
+}
+
+.home-btn:hover {
+  background: rgba(147, 197, 253, 0.25);
+  box-shadow: 0 0 35px rgba(147, 197, 253, 0.6);
+}
+
+@media (max-width: 760px) {
+  .pulse-score { font-size: 5.2rem; }
+  .result-card { padding: 40px 25px; }
+}
